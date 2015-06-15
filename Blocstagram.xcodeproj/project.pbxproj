@@ -11,6 +11,7 @@
 		5220F0C41B2E3BE70013F86D /* BLCMedia.m in Sources */ = {isa = PBXBuildFile; fileRef = 5220F0C31B2E3BE70013F86D /* BLCMedia.m */; };
 		5220F0C71B2E3C7E0013F86D /* BLCComment.m in Sources */ = {isa = PBXBuildFile; fileRef = 5220F0C61B2E3C7E0013F86D /* BLCComment.m */; };
 		5220F0CA1B2E3E5D0013F86D /* BLCDatasource.m in Sources */ = {isa = PBXBuildFile; fileRef = 5220F0C91B2E3E5D0013F86D /* BLCDatasource.m */; };
+		5220F0CD1B2E919A0013F86D /* BLCMediaTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5220F0CC1B2E919A0013F86D /* BLCMediaTableViewCell.m */; };
 		5250EF821B2A4CDA003AE7F7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5250EF811B2A4CDA003AE7F7 /* main.m */; };
 		5250EF851B2A4CDA003AE7F7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5250EF841B2A4CDA003AE7F7 /* AppDelegate.m */; };
 		5250EF871B2A4CDA003AE7F7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5250EF861B2A4CDA003AE7F7 /* Images.xcassets */; };
@@ -48,6 +49,8 @@
 		5220F0C61B2E3C7E0013F86D /* BLCComment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLCComment.m; sourceTree = "<group>"; };
 		5220F0C81B2E3E5D0013F86D /* BLCDatasource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLCDatasource.h; sourceTree = "<group>"; };
 		5220F0C91B2E3E5D0013F86D /* BLCDatasource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLCDatasource.m; sourceTree = "<group>"; };
+		5220F0CB1B2E919A0013F86D /* BLCMediaTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLCMediaTableViewCell.h; sourceTree = "<group>"; };
+		5220F0CC1B2E919A0013F86D /* BLCMediaTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLCMediaTableViewCell.m; sourceTree = "<group>"; };
 		5250EF7C1B2A4CDA003AE7F7 /* Blocstagram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Blocstagram.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5250EF801B2A4CDA003AE7F7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5250EF811B2A4CDA003AE7F7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -127,6 +130,8 @@
 				5220F0C91B2E3E5D0013F86D /* BLCDatasource.m */,
 				5220F0C51B2E3C7E0013F86D /* BLCComment.h */,
 				5220F0C61B2E3C7E0013F86D /* BLCComment.m */,
+				5220F0CB1B2E919A0013F86D /* BLCMediaTableViewCell.h */,
+				5220F0CC1B2E919A0013F86D /* BLCMediaTableViewCell.m */,
 			);
 			path = Blocstagram;
 			sourceTree = "<group>";
@@ -289,6 +294,7 @@
 				5250EFB71B2A4EE9003AE7F7 /* BLCImagesTableViewController.m in Sources */,
 				5220F0CA1B2E3E5D0013F86D /* BLCDatasource.m in Sources */,
 				5220F0C41B2E3BE70013F86D /* BLCMedia.m in Sources */,
+				5220F0CD1B2E919A0013F86D /* BLCMediaTableViewCell.m in Sources */,
 				5220F0C71B2E3C7E0013F86D /* BLCComment.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

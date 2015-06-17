@@ -104,11 +104,20 @@
 //NOTE: IMAGE DELETING CRASHES
 
 - (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
+    NSLog(@"Hello?");
     if (editingStyle == UITableViewCellEditingStyleDelete) {
+        
+            NSLog(@"Hello?");
         
 //        [self.images removeObjectAtIndex:indexPath.row];
         BLCMedia *item = self.items[indexPath.row];
-        [self.items removeObject:item];
+        NSMutableArray* mutableItems = [[BLCDatasource sharedInstance].mediaItems mutableCopy];
+        [mutableItems removeObjectAtIndex:indexPath.row];
+        
+        NSLog(@"%i", [BLCDatasource sharedInstance].mediaItems.count);
+        [BLCDatasource sharedInstance].mediaItems = mutableItems;
+        NSLog(@"%i", [BLCDatasource sharedInstance].mediaItems.count);
+        
         [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
         
        } else if (editingStyle == UITableViewCellEditingStyleInsert) {

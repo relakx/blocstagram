@@ -69,10 +69,14 @@ static NSParagraphStyle *paragraphStyle;
         [self.contentView addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|[_usernameAndCaptionLabel]|" options:kNilOptions metrics:nil views:viewDictionary]];
         [self.contentView addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|[_commentLabel]|" options:kNilOptions metrics:nil views:viewDictionary]];
         
-        [self.contentView addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|[_mediaImageView][_usernameAndCaptionLabel][_commentLabel]"
+                                          
+                                          
+        [self.contentView addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|[_usernameAndCaptionLabel][_commentLabel]"
+        
                                                                                  options:kNilOptions
                                                                                  metrics:nil
                                                                                    views:viewDictionary]];
+
         self.imageHeightConstraint = [NSLayoutConstraint constraintWithItem:_mediaImageView
                                                                   attribute:NSLayoutAttributeHeight
                                                                   relatedBy:NSLayoutRelationEqual
@@ -113,6 +117,7 @@ static NSParagraphStyle *paragraphStyle;
 
     self.usernameAndCaptionLabelHeightConstraint.constant = usernameLabelSize.height+20;
     self.commentLabelHeightConstraint.constant = commentLabelSize.height+20;
+    
     
     // Hide the line between cells
     self.separatorInset = UIEdgeInsetsMake(0, 0, 0, CGRectGetWidth(self.bounds));
@@ -177,15 +182,13 @@ static NSParagraphStyle *paragraphStyle;
 }
 
 + (CGFloat) heightForMediaItem:(BLCMedia *)mediaItem width:(CGFloat)width {
-    // Make a cell
-    BLCMediaTableViewCell *layoutCell = [[BLCMediaTableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"layoutCell"];
-    layoutCell.mediaItem = mediaItem;
-    layoutCell.frame = CGRectMake(0, 0, width, CGRectGetHeight(layoutCell.frame));
-    [layoutCell setNeedsLayout];
-    [layoutCell layoutIfNeeded];
     
-    // Get the actual height required for the cell
-    return CGRectGetMaxY(layoutCell.commentLabel.frame)+70; //had to add extra space
+    BLCMedia *thisMediaItem = [[BLCMedia alloc] init];
+    thisMediaItem = mediaItem;
+    CGFloat height = mediaItem.image.size.height / mediaItem.image.size.width * width;
+    
+
+    return height;
 }
 
 

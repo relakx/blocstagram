@@ -106,10 +106,9 @@
 - (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
     if (editingStyle == UITableViewCellEditingStyleDelete) {
         
-//        [self.images removeObjectAtIndex:indexPath.row];
-        BLCMedia *item = self.items[indexPath.row];
-        [self.items removeObject:item];
+        [[BLCDatasource sharedInstance] deleteMediaItem:self.items[indexPath.row]];
         [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
+        
         
        } else if (editingStyle == UITableViewCellEditingStyleInsert) {
 //        
@@ -117,9 +116,9 @@
        }
 }
 
-- (NSMutableArray *) items {
+- (NSArray *) items {
     
-    NSMutableArray *itemsArray = [[BLCDatasource sharedInstance].mediaItems mutableCopy];
+    NSArray *itemsArray = [BLCDatasource sharedInstance].mediaItems;
     
     return itemsArray;
     

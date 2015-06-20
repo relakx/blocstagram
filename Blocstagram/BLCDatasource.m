@@ -117,4 +117,15 @@
     return [NSString stringWithString:s];
 }
 
+- (void) deleteMediaItem:(BLCMedia *)mediaItem {
+    
+    BLCMedia *itemToRemove = mediaItem;
+    NSMutableArray *tempArray = [self.mediaItems mutableCopy];
+    [tempArray removeObject:itemToRemove];
+    self.mediaItems = tempArray;
+    
+    
+}
+
+
 @end

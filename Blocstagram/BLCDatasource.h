@@ -7,10 +7,14 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "BLCMedia.h"
 
 @interface BLCDatasource : NSObject
 
  +(instancetype) sharedInstance;
+
  @property (nonatomic, strong, readonly) NSArray *mediaItems;
+
+- (void) deleteMediaItem:(BLCMedia *)mediaItem;
 
 @end

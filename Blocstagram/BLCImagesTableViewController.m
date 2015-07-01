@@ -178,17 +178,28 @@
 - (void) infiniteScrollIfNecessary {
     NSIndexPath *bottomIndexPath = [[self.tableView indexPathsForVisibleRows] lastObject];
     
-    if (bottomIndexPath && bottomIndexPath.row == [BLCDatasource sharedInstance].mediaItems.count - 1) {
+    if (bottomIndexPath && bottomIndexPath.row > [BLCDatasource sharedInstance].mediaItems.count - 7) {
         // The very last cell is on screen
         [[BLCDatasource sharedInstance] requestOldItemsWithCompletionHandler:nil];
     }
 }
 
-#pragma mark - UIScrollViewDelegate
-
-- (void)scrollViewDidScroll:(UIScrollView *)scrollView {
+- (void) scrollViewWillBeginDecelerating:(UIScrollView *)scrollView{
+    
+//    NSLog(@"Will begin decelerating");
     [self infiniteScrollIfNecessary];
 }
+
+#pragma mark - UIScrollViewDelegate
+
+//- (void)scrollViewDidScroll:(UIScrollView *)scrollView {
+////    NSLog(@"scroll view did scroll");
+//    [self infiniteScrollIfNecessary];
+//}
+//
+//- (void)scrollViewDidEndDragging:(UIScrollView *)scrollView willDecelerate:(BOOL)decelerate{
+//    NSLog(@"did end dragging");
+//}
 
 /*
 // Override to support rearranging the table view.

@@ -28,6 +28,7 @@
 		5250EFB31B2A4E12003AE7F7 /* 9.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5250EFA91B2A4E12003AE7F7 /* 9.jpg */; };
 		5250EFB41B2A4E12003AE7F7 /* 10.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5250EFAA1B2A4E12003AE7F7 /* 10.jpg */; };
 		5250EFB71B2A4EE9003AE7F7 /* BLCImagesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5250EFB61B2A4EE9003AE7F7 /* BLCImagesTableViewController.m */; };
+		52CDA7471B447663005F0507 /* BLCLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52CDA7461B447663005F0507 /* BLCLoginViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,6 +74,8 @@
 		5250EFAA1B2A4E12003AE7F7 /* 10.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = 10.jpg; path = "../../../../../Downloads/blocstagram-sample-images/10.jpg"; sourceTree = "<group>"; };
 		5250EFB51B2A4EE9003AE7F7 /* BLCImagesTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLCImagesTableViewController.h; sourceTree = "<group>"; };
 		5250EFB61B2A4EE9003AE7F7 /* BLCImagesTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLCImagesTableViewController.m; sourceTree = "<group>"; };
+		52CDA7451B447663005F0507 /* BLCLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLCLoginViewController.h; sourceTree = "<group>"; };
+		52CDA7461B447663005F0507 /* BLCLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLCLoginViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,6 +131,8 @@
 				5220F0C31B2E3BE70013F86D /* BLCMedia.m */,
 				5220F0C81B2E3E5D0013F86D /* BLCDatasource.h */,
 				5220F0C91B2E3E5D0013F86D /* BLCDatasource.m */,
+				52CDA7451B447663005F0507 /* BLCLoginViewController.h */,
+				52CDA7461B447663005F0507 /* BLCLoginViewController.m */,
 				5220F0C51B2E3C7E0013F86D /* BLCComment.h */,
 				5220F0C61B2E3C7E0013F86D /* BLCComment.m */,
 				5220F0CB1B2E919A0013F86D /* BLCMediaTableViewCell.h */,
@@ -296,6 +301,7 @@
 				5220F0C41B2E3BE70013F86D /* BLCMedia.m in Sources */,
 				5220F0CD1B2E919A0013F86D /* BLCMediaTableViewCell.m in Sources */,
 				5220F0C71B2E3C7E0013F86D /* BLCComment.m in Sources */,
+				52CDA7471B447663005F0507 /* BLCLoginViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

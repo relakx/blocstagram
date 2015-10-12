@@ -1,29 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-<<<<<<< HEAD
-   LastUpgradeVersion = "0700"
-=======
    LastUpgradeVersion = "0640"
->>>>>>> install-cocoapods
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
       buildImplicitDependencies = "YES">
       <BuildActionEntries>
          <BuildActionEntry
-<<<<<<< HEAD
-            buildForAnalyzing = "YES"
-            buildForTesting = "YES"
-            buildForRunning = "YES"
-            buildForProfiling = "YES"
-            buildForArchiving = "YES">
-            <BuildableReference
-               BuildableIdentifier = 'primary'
-               BlueprintIdentifier = 'ABD794C28FE8E76A5D1B8666'
-               BlueprintName = 'Pods'
-               ReferencedContainer = 'container:Pods.xcodeproj'
-               BuildableName = 'libPods.a'>
-=======
             buildForTesting = "YES"
             buildForRunning = "YES"
             buildForProfiling = "YES"
@@ -31,11 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "676943BA08A578EAC24FAD60"
-               BuildableName = "libPods.a"
-               BlueprintName = "Pods"
+               BlueprintIdentifier = "55C32205C15B6C44D03B4F29"
+               BuildableName = "libPods-UICKeyChainStore.a"
+               BlueprintName = "Pods-UICKeyChainStore"
                ReferencedContainer = "container:Pods.xcodeproj">
->>>>>>> install-cocoapods
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -45,47 +27,27 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES"
       buildConfiguration = "Debug">
-<<<<<<< HEAD
-      <AdditionalOptions>
-      </AdditionalOptions>
-=======
       <Testables>
       </Testables>
->>>>>>> install-cocoapods
    </TestAction>
    <LaunchAction
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       launchStyle = "0"
       useCustomWorkingDirectory = "NO"
-<<<<<<< HEAD
-      ignoresPersistentStateOnLaunch = "NO"
-      debugDocumentVersioning = "YES"
-      debugServiceExtension = "internal"
-      buildConfiguration = "Debug"
-=======
       buildConfiguration = "Debug"
       ignoresPersistentStateOnLaunch = "NO"
       debugDocumentVersioning = "YES"
->>>>>>> install-cocoapods
       allowLocationSimulation = "YES">
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>
    <ProfileAction
-<<<<<<< HEAD
-      savedToolIdentifier = ""
-      useCustomWorkingDirectory = "NO"
-      debugDocumentVersioning = "YES"
-      buildConfiguration = "Release"
-      shouldUseLaunchSchemeArgsEnv = "YES">
-=======
       shouldUseLaunchSchemeArgsEnv = "YES"
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       buildConfiguration = "Release"
       debugDocumentVersioning = "YES">
->>>>>>> install-cocoapods
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">

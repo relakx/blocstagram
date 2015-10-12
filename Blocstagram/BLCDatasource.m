@@ -107,9 +107,14 @@
     self.thereAreNoMoreOlderMessages = NO;
     if (self.isRefreshing == NO) {
         self.isRefreshing = YES;
-        
-        NSString *minID = [[self.mediaItems firstObject] idNumber];
+        NSString *minID;
+        if ([[self.mediaItems firstObject] idNumber] == nil){
+            minID = @"1";
+        } else {
+            minID = [[self.mediaItems firstObject] idNumber];
+        }
         NSDictionary *parameters = @{@"min_id": minID};
+            
         
         [self populateDataWithParameters:parameters completionHandler:^(NSError *error) {
             self.isRefreshing = NO;

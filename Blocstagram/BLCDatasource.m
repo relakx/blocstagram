@@ -12,6 +12,7 @@
 #import "BLCMedia.h"
 #import "BLCComment.h"
 #import "BLCLoginViewController.h"
+#import <UICKeyChainStore.h>
 
 @interface BLCDatasource () {
     NSMutableArray *_mediaItems;

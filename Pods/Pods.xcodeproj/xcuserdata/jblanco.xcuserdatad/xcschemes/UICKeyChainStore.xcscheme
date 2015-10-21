@@ -14,7 +14,11 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
+<<<<<<< HEAD
                BlueprintIdentifier = '1EEFD9FD628CC2FF599ED5BA'
+=======
+               BlueprintIdentifier = 'CF47EF431667131772E5D67A'
+>>>>>>> install-cocoapods-retry
                BlueprintName = 'UICKeyChainStore'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'libUICKeyChainStore.a'>

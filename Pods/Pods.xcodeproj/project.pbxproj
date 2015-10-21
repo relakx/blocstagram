@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> install-cocoapods-retry
 		00ADA42C940934927306976C6E459E55 /* UICKeyChainStore.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E579109A36B4D2FA831EE71A81D219C /* UICKeyChainStore.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7A0D92EF332686516F8D82FA42A5E7CE /* Pods-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 272643F56613CA0D336AE3DBF19DC404 /* Pods-dummy.m */; };
 		7B5080964CFBFF584300E820B412D094 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0307982621563C439755B9BC0ED60A1A /* Foundation.framework */; };
@@ -24,6 +27,7 @@
 			proxyType = 1;
 			remoteGlobalIDString = 20F413C68820C329601F74ABE130EF23;
 			remoteInfo = UICKeyChainStore;
+<<<<<<< HEAD
 =======
 		1B1517D2D9C261999C5D3BA0 /* Pods-UICKeyChainStore-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BCB8FCBD511D579D6A515006 /* Pods-UICKeyChainStore-dummy.m */; };
 		70C245280BB4BF8FA14FF7D3 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 552E8FED2BD04F2923FA1007 /* Security.framework */; };
@@ -42,11 +46,16 @@
 			remoteGlobalIDString = 55C32205C15B6C44D03B4F29;
 			remoteInfo = "Pods-UICKeyChainStore";
 >>>>>>> install-cocoapods
+=======
+>>>>>>> install-cocoapods-retry
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> install-cocoapods-retry
 		0307982621563C439755B9BC0ED60A1A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		030AF0A5FD748F8C81F10F4BC4860E34 /* UICKeyChainStore.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = UICKeyChainStore.xcconfig; sourceTree = "<group>"; };
 		10834806BD7B412BC24F347361FA2C8E /* Pods-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-acknowledgements.plist"; sourceTree = "<group>"; };
@@ -81,6 +90,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7B5080964CFBFF584300E820B412D094 /* Foundation.framework in Frameworks */,
+<<<<<<< HEAD
 =======
 		0369EC875E1047A0E5CEA199 /* Pods-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-resources.sh"; sourceTree = "<group>"; };
 		090AE6303CC86D656F1C7E26 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -118,6 +128,8 @@
 			files = (
 				CFC6A932DC5FADAEBB694B57 /* Foundation.framework in Frameworks */,
 >>>>>>> install-cocoapods
+=======
+>>>>>>> install-cocoapods-retry
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -125,6 +137,9 @@
 
 /* Begin PBXGroup section */
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> install-cocoapods-retry
 		037C0CA694176A3C0915F62C9D20B3E6 /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -146,6 +161,7 @@
 			isa = PBXGroup;
 			children = (
 				5A86A7991AF0B723B7571D408852AEBF /* iOS */,
+<<<<<<< HEAD
 =======
 		0AC7565F81122C6B7AFEFDF6 /* Products */ = {
 			isa = PBXGroup;
@@ -172,16 +188,22 @@
 			children = (
 				5B19D5999253ED7E120DC178 /* iOS */,
 >>>>>>> install-cocoapods
+=======
+>>>>>>> install-cocoapods-retry
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> install-cocoapods-retry
 		5A86A7991AF0B723B7571D408852AEBF /* iOS */ = {
 			isa = PBXGroup;
 			children = (
 				0307982621563C439755B9BC0ED60A1A /* Foundation.framework */,
 				60FA6CD62EB7A9C85C7DBBA20924D70A /* Security.framework */,
+<<<<<<< HEAD
 =======
 		5B19D5999253ED7E120DC178 /* iOS */ = {
 			isa = PBXGroup;
@@ -189,11 +211,16 @@
 				9BA3BCD88EA0DD0BA46146EA /* Foundation.framework */,
 				552E8FED2BD04F2923FA1007 /* Security.framework */,
 >>>>>>> install-cocoapods
+=======
+>>>>>>> install-cocoapods-retry
 			);
 			name = iOS;
 			sourceTree = "<group>";
 		};
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> install-cocoapods-retry
 		5D7D5D656588F3107D378D346A634B19 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -245,6 +272,7 @@
 			isa = PBXGroup;
 			children = (
 				6D4B1682FB762FE36A5AEB9A81C5FECB /* UICKeyChainStore */,
+<<<<<<< HEAD
 =======
 		6B20EE9AFF3276173E104065 /* UICKeyChainStore */ = {
 			isa = PBXGroup;
@@ -296,6 +324,8 @@
 			children = (
 				6B20EE9AFF3276173E104065 /* UICKeyChainStore */,
 >>>>>>> install-cocoapods
+=======
+>>>>>>> install-cocoapods-retry
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -304,11 +334,15 @@
 
 /* Begin PBXHeadersBuildPhase section */
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> install-cocoapods-retry
 		41966C860B170B0B026BB5EE4D94D3D3 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				00ADA42C940934927306976C6E459E55 /* UICKeyChainStore.h in Headers */,
+<<<<<<< HEAD
 =======
 		8658CB476C277975A1F062A9 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
@@ -316,6 +350,8 @@
 			files = (
 				DEF94B1DFE3107A034FEA62C /* UICKeyChainStore.h in Headers */,
 >>>>>>> install-cocoapods
+=======
+>>>>>>> install-cocoapods-retry
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -323,6 +359,9 @@
 
 /* Begin PBXNativeTarget section */
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> install-cocoapods-retry
 		20F413C68820C329601F74ABE130EF23 /* UICKeyChainStore */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5C6784B633C3B01B59A99DE97DB07AA3 /* Build configuration list for PBXNativeTarget "UICKeyChainStore" */;
@@ -330,6 +369,7 @@
 				0A6E59FD4F93A21F787A46D7C7CB9EC3 /* Sources */,
 				1DB1EC9A93455C696D0014C64AF12301 /* Frameworks */,
 				41966C860B170B0B026BB5EE4D94D3D3 /* Headers */,
+<<<<<<< HEAD
 =======
 		55C32205C15B6C44D03B4F29 /* Pods-UICKeyChainStore */ = {
 			isa = PBXNativeTarget;
@@ -339,12 +379,17 @@
 				48D6C5319657B16CC2DCCF8C /* Frameworks */,
 				8658CB476C277975A1F062A9 /* Headers */,
 >>>>>>> install-cocoapods
+=======
+>>>>>>> install-cocoapods-retry
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> install-cocoapods-retry
 			name = UICKeyChainStore;
 			productName = UICKeyChainStore;
 			productReference = 23FCB8E4C96ACC1F89CCA5E2D7AA222F /* libUICKeyChainStore.a */;
@@ -356,6 +401,7 @@
 			buildPhases = (
 				6814A2959EC3BC6FCF40982E9039DE1B /* Sources */,
 				2970398B6D1C3DF9D2A4FF614D20F09A /* Frameworks */,
+<<<<<<< HEAD
 =======
 			name = "Pods-UICKeyChainStore";
 			productName = "Pods-UICKeyChainStore";
@@ -369,16 +415,22 @@
 				174892A39B664973815E73BF /* Sources */,
 				EC3857B5B37FA54A4B18A71A /* Frameworks */,
 >>>>>>> install-cocoapods
+=======
+>>>>>>> install-cocoapods-retry
 			);
 			buildRules = (
 			);
 			dependencies = (
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> install-cocoapods-retry
 				19909DE37107D0BDD382602535070ED1 /* PBXTargetDependency */,
 			);
 			name = Pods;
 			productName = Pods;
 			productReference = D94DEFFD10C3C97C91BECEB8C71BE1BF /* libPods.a */;
+<<<<<<< HEAD
 =======
 				3ECD641A2F9951B54B6F1A2C /* PBXTargetDependency */,
 			);
@@ -386,12 +438,17 @@
 			productName = Pods;
 			productReference = 090AE6303CC86D656F1C7E26 /* libPods.a */;
 >>>>>>> install-cocoapods
+=======
+>>>>>>> install-cocoapods-retry
 			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> install-cocoapods-retry
 		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
@@ -399,6 +456,7 @@
 				LastUpgradeCheck = 0700;
 			};
 			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+<<<<<<< HEAD
 =======
 		1EF01C3C320CBB6E73EC4043 /* Project object */ = {
 			isa = PBXProject;
@@ -407,6 +465,8 @@
 			};
 			buildConfigurationList = E9877210A6ADDF77AA204437 /* Build configuration list for PBXProject "Pods" */;
 >>>>>>> install-cocoapods
+=======
+>>>>>>> install-cocoapods-retry
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -414,6 +474,9 @@
 				en,
 			);
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> install-cocoapods-retry
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
 			productRefGroup = 1A1E92DE11DB441C29D7ED0C8FC7071D /* Products */;
 			projectDirPath = "";
@@ -421,6 +484,7 @@
 			targets = (
 				CA7E1BDFE5AA3746D7353465FB8EDA57 /* Pods */,
 				20F413C68820C329601F74ABE130EF23 /* UICKeyChainStore */,
+<<<<<<< HEAD
 =======
 			mainGroup = 1931E66AD55696F7122EEF7D;
 			productRefGroup = 0AC7565F81122C6B7AFEFDF6 /* Products */;
@@ -430,12 +494,17 @@
 				676943BA08A578EAC24FAD60 /* Pods */,
 				55C32205C15B6C44D03B4F29 /* Pods-UICKeyChainStore */,
 >>>>>>> install-cocoapods
+=======
+>>>>>>> install-cocoapods-retry
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> install-cocoapods-retry
 		0A6E59FD4F93A21F787A46D7C7CB9EC3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -450,6 +519,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7A0D92EF332686516F8D82FA42A5E7CE /* Pods-dummy.m in Sources */,
+<<<<<<< HEAD
 =======
 		174892A39B664973815E73BF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -466,6 +536,8 @@
 				1B1517D2D9C261999C5D3BA0 /* Pods-UICKeyChainStore-dummy.m in Sources */,
 				94C582F0520BD271EBBD8314 /* UICKeyChainStore.m in Sources */,
 >>>>>>> install-cocoapods
+=======
+>>>>>>> install-cocoapods-retry
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -473,11 +545,15 @@
 
 /* Begin PBXTargetDependency section */
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> install-cocoapods-retry
 		19909DE37107D0BDD382602535070ED1 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = UICKeyChainStore;
 			target = 20F413C68820C329601F74ABE130EF23 /* UICKeyChainStore */;
 			targetProxy = EDEAEDC5DF2A85B2449093970E587F5B /* PBXContainerItemProxy */;
+<<<<<<< HEAD
 =======
 		3ECD641A2F9951B54B6F1A2C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -485,10 +561,13 @@
 			target = 55C32205C15B6C44D03B4F29 /* Pods-UICKeyChainStore */;
 			targetProxy = ACE3F06C4F57736472AAD969 /* PBXContainerItemProxy */;
 >>>>>>> install-cocoapods
+=======
+>>>>>>> install-cocoapods-retry
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+<<<<<<< HEAD
 <<<<<<< HEAD
 		10DE1947DAC0ED28F6C0A9F9BD75D546 /* Release */ = {
 =======
@@ -533,6 +612,9 @@
 		};
 		7D116AD53A637616546627C5 /* Release */ = {
 >>>>>>> install-cocoapods
+=======
+		10DE1947DAC0ED28F6C0A9F9BD75D546 /* Release */ = {
+>>>>>>> install-cocoapods-retry
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -567,6 +649,9 @@
 			name = Release;
 		};
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> install-cocoapods-retry
 		213B172B545C05B9D764BD99375F7259 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 030AF0A5FD748F8C81F10F4BC4860E34 /* UICKeyChainStore.xcconfig */;
@@ -611,6 +696,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				MACH_O_TYPE = staticlib;
 				MTL_ENABLE_DEBUG_INFO = NO;
+<<<<<<< HEAD
 =======
 		8162EFB7623B060751CCA5F0 /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -652,6 +738,8 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				MTL_ENABLE_DEBUG_INFO = YES;
 >>>>>>> install-cocoapods
+=======
+>>>>>>> install-cocoapods-retry
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
@@ -660,6 +748,9 @@
 				SKIP_INSTALL = YES;
 			};
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> install-cocoapods-retry
 			name = Release;
 		};
 		552D02D5BA751AC2E8790D2811D496CA /* Debug */ = {
@@ -709,6 +800,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				MACH_O_TYPE = staticlib;
 				MTL_ENABLE_DEBUG_INFO = YES;
+<<<<<<< HEAD
 =======
 			name = Debug;
 		};
@@ -720,6 +812,8 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 >>>>>>> install-cocoapods
+=======
+>>>>>>> install-cocoapods-retry
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
@@ -728,20 +822,28 @@
 				SKIP_INSTALL = YES;
 			};
 <<<<<<< HEAD
+<<<<<<< HEAD
 			name = Debug;
 =======
 			name = Release;
 >>>>>>> install-cocoapods
+=======
+			name = Debug;
+>>>>>>> install-cocoapods-retry
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> install-cocoapods-retry
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				552D02D5BA751AC2E8790D2811D496CA /* Debug */,
 				10DE1947DAC0ED28F6C0A9F9BD75D546 /* Release */,
+<<<<<<< HEAD
 =======
 		72E9407868BC13BDA3FBDD09 /* Build configuration list for PBXNativeTarget "Pods" */ = {
 			isa = XCConfigurationList;
@@ -749,16 +851,22 @@
 				C3CE8C2D9EAB3E6D8E59C5B8 /* Debug */,
 				CE5F02E937808ACF3E3DF2C1 /* Release */,
 >>>>>>> install-cocoapods
+=======
+>>>>>>> install-cocoapods-retry
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> install-cocoapods-retry
 		5C6784B633C3B01B59A99DE97DB07AA3 /* Build configuration list for PBXNativeTarget "UICKeyChainStore" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				213B172B545C05B9D764BD99375F7259 /* Debug */,
 				412DC4B3F4F1B0C54CF699E375AA3896 /* Release */,
+<<<<<<< HEAD
 =======
 		7C762FB6BEE01F41637BDA9E /* Build configuration list for PBXNativeTarget "Pods-UICKeyChainStore" */ = {
 			isa = XCConfigurationList;
@@ -766,16 +874,22 @@
 				B97CF72C9F853F58181A8DD4 /* Debug */,
 				8162EFB7623B060751CCA5F0 /* Release */,
 >>>>>>> install-cocoapods
+=======
+>>>>>>> install-cocoapods-retry
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> install-cocoapods-retry
 		DF78F54384B2263985F40885864712DD /* Build configuration list for PBXNativeTarget "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				7B930A638357852032A21AA55201C3A7 /* Debug */,
 				4F10C7A43A5DBBC39E50356BA72FA8A8 /* Release */,
+<<<<<<< HEAD
 =======
 		E9877210A6ADDF77AA204437 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
@@ -783,6 +897,8 @@
 				1D71167FA28799F075BA1ED2 /* Debug */,
 				7D116AD53A637616546627C5 /* Release */,
 >>>>>>> install-cocoapods
+=======
+>>>>>>> install-cocoapods-retry
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -790,8 +906,12 @@
 /* End XCConfigurationList section */
 	};
 <<<<<<< HEAD
+<<<<<<< HEAD
 	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 =======
 	rootObject = 1EF01C3C320CBB6E73EC4043 /* Project object */;
 >>>>>>> install-cocoapods
+=======
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+>>>>>>> install-cocoapods-retry
 }

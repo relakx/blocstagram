@@ -1,10 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
 <<<<<<< HEAD
+<<<<<<< HEAD
    LastUpgradeVersion = "0700"
 =======
    LastUpgradeVersion = "0640"
 >>>>>>> install-cocoapods
+=======
+   LastUpgradeVersion = "0700"
+>>>>>>> install-cocoapods-retry
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -12,6 +16,9 @@
       <BuildActionEntries>
          <BuildActionEntry
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> install-cocoapods-retry
             buildForAnalyzing = "YES"
             buildForTesting = "YES"
             buildForRunning = "YES"
@@ -19,6 +26,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
+<<<<<<< HEAD
                BlueprintIdentifier = 'ABD794C28FE8E76A5D1B8666'
                BlueprintName = 'Pods'
                ReferencedContainer = 'container:Pods.xcodeproj'
@@ -36,6 +44,12 @@
                BlueprintName = "Pods"
                ReferencedContainer = "container:Pods.xcodeproj">
 >>>>>>> install-cocoapods
+=======
+               BlueprintIdentifier = '756AF55DDA2457AD17170006'
+               BlueprintName = 'Pods'
+               ReferencedContainer = 'container:Pods.xcodeproj'
+               BuildableName = 'libPods.a'>
+>>>>>>> install-cocoapods-retry
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -46,12 +60,17 @@
       shouldUseLaunchSchemeArgsEnv = "YES"
       buildConfiguration = "Debug">
 <<<<<<< HEAD
+<<<<<<< HEAD
       <AdditionalOptions>
       </AdditionalOptions>
 =======
       <Testables>
       </Testables>
 >>>>>>> install-cocoapods
+=======
+      <AdditionalOptions>
+      </AdditionalOptions>
+>>>>>>> install-cocoapods-retry
    </TestAction>
    <LaunchAction
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
@@ -59,26 +78,36 @@
       launchStyle = "0"
       useCustomWorkingDirectory = "NO"
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> install-cocoapods-retry
       ignoresPersistentStateOnLaunch = "NO"
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
       buildConfiguration = "Debug"
+<<<<<<< HEAD
 =======
       buildConfiguration = "Debug"
       ignoresPersistentStateOnLaunch = "NO"
       debugDocumentVersioning = "YES"
 >>>>>>> install-cocoapods
+=======
+>>>>>>> install-cocoapods-retry
       allowLocationSimulation = "YES">
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>
    <ProfileAction
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> install-cocoapods-retry
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES"
       buildConfiguration = "Release"
       shouldUseLaunchSchemeArgsEnv = "YES">
+<<<<<<< HEAD
 =======
       shouldUseLaunchSchemeArgsEnv = "YES"
       savedToolIdentifier = ""
@@ -86,6 +115,8 @@
       buildConfiguration = "Release"
       debugDocumentVersioning = "YES">
 >>>>>>> install-cocoapods
+=======
+>>>>>>> install-cocoapods-retry
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">

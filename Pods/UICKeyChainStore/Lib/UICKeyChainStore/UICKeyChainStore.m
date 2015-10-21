@@ -526,10 +526,21 @@ static NSString *_defaultService;
     
     NSMutableDictionary *query = [self query];
     query[(__bridge __strong id)kSecAttrAccount] = key;
+<<<<<<< HEAD
 #if TARGET_OS_IPHONE
     if (floor(NSFoundationVersionNumber) > floor(1047.25)) { // iOS 8+
         query[(__bridge __strong id)kSecUseNoAuthenticationUI] = (__bridge id)kCFBooleanTrue;
     }
+=======
+#if TARGET_OS_IOS
+    if (floor(NSFoundationVersionNumber) > floor(1144.17)) { // iOS 9+
+        query[(__bridge __strong id)kSecUseAuthenticationUI] = (__bridge id)kSecUseAuthenticationUIFail;
+    } else if (floor(NSFoundationVersionNumber) > floor(1047.25)) { // iOS 8+
+        query[(__bridge __strong id)kSecUseNoAuthenticationUI] = (__bridge id)kCFBooleanTrue;
+    }
+#elif TARGET_OS_WATCH
+    query[(__bridge __strong id)kSecUseAuthenticationUI] = (__bridge id)kSecUseAuthenticationUIFail;
+>>>>>>> install-cocoapods-retry
 #endif
     
     OSStatus status = SecItemCopyMatching((__bridge CFDictionaryRef)query, NULL);
@@ -725,7 +736,11 @@ static NSString *_defaultService;
 - (BOOL)removeAllItemsWithError:(NSError *__autoreleasing *)error
 {
     NSMutableDictionary *query = [self query];
+<<<<<<< HEAD
 #if !TARGET_OS_IPHONE
+=======
+#if !TARGET_OS_IOS && !TARGET_OS_WATCH
+>>>>>>> install-cocoapods-retry
     query[(__bridge id)kSecMatchLimit] = (__bridge id)kSecMatchLimitAll;
 #endif
     
@@ -759,7 +774,11 @@ static NSString *_defaultService;
 
 #pragma mark -
 
+<<<<<<< HEAD
 - (NSArray *)allKeys
+=======
+- (NSArray UIC_KEY_TYPE *)allKeys
+>>>>>>> install-cocoapods-retry
 {
     NSArray *items = [self.class prettify:[self itemClassObject] items:[self items]];
     NSMutableArray *keys = [[NSMutableArray alloc] init];
@@ -769,7 +788,11 @@ static NSString *_defaultService;
     return keys.copy;
 }
 
+<<<<<<< HEAD
 + (NSArray *)allKeysWithItemClass:(UICKeyChainStoreItemClass)itemClass
+=======
++ (NSArray UIC_KEY_TYPE *)allKeysWithItemClass:(UICKeyChainStoreItemClass)itemClass
+>>>>>>> install-cocoapods-retry
 {
     CFTypeRef itemClassObject = kSecClassGenericPassword;
     if (itemClass == UICKeyChainStoreItemClassGenericPassword) {
@@ -785,7 +808,11 @@ static NSString *_defaultService;
     
     CFArrayRef result = nil;
     CFDictionaryRef cfquery = (CFDictionaryRef)CFBridgingRetain(query);
+<<<<<<< HEAD
     OSStatus status = SecItemCopyMatching(cfquery,(CFTypeRef *)&result);
+=======
+    OSStatus status = SecItemCopyMatching(cfquery, (CFTypeRef *)&result);
+>>>>>>> install-cocoapods-retry
     CFRelease(cfquery);
     
     if (status == errSecSuccess) {
@@ -819,13 +846,21 @@ static NSString *_defaultService;
     query[(__bridge __strong id)kSecClass] = (__bridge id)itemClassObject;
     query[(__bridge __strong id)kSecMatchLimit] = (__bridge id)kSecMatchLimitAll;
     query[(__bridge __strong id)kSecReturnAttributes] = (__bridge id)kCFBooleanTrue;
+<<<<<<< HEAD
 #if TARGET_OS_IPHONE
+=======
+#if TARGET_OS_IOS || TARGET_OS_WATCH
+>>>>>>> install-cocoapods-retry
     query[(__bridge __strong id)kSecReturnData] = (__bridge id)kCFBooleanTrue;
 #endif
     
     CFArrayRef result = nil;
     CFDictionaryRef cfquery = (CFDictionaryRef)CFBridgingRetain(query);
+<<<<<<< HEAD
     OSStatus status = SecItemCopyMatching(cfquery,(CFTypeRef *)&result);
+=======
+    OSStatus status = SecItemCopyMatching(cfquery, (CFTypeRef *)&result);
+>>>>>>> install-cocoapods-retry
     CFRelease(cfquery);
     
     if (status == errSecSuccess) {
@@ -847,7 +882,11 @@ static NSString *_defaultService;
     NSMutableDictionary *query = [self query];
     query[(__bridge __strong id)kSecMatchLimit] = (__bridge id)kSecMatchLimitAll;
     query[(__bridge __strong id)kSecReturnAttributes] = (__bridge id)kCFBooleanTrue;
+<<<<<<< HEAD
 #if TARGET_OS_IPHONE
+=======
+#if TARGET_OS_IOS || TARGET_OS_WATCH
+>>>>>>> install-cocoapods-retry
     query[(__bridge __strong id)kSecReturnData] = (__bridge id)kCFBooleanTrue;
 #endif
     
@@ -945,7 +984,11 @@ static NSString *_defaultService;
 
 #pragma mark -
 
+<<<<<<< HEAD
 #if TARGET_OS_IPHONE
+=======
+#if TARGET_OS_IOS
+>>>>>>> install-cocoapods-retry
 - (void)sharedPasswordWithCompletion:(void (^)(NSString *account, NSString *password, NSError *error))completion
 {
     NSString *domain = self.server.host;
@@ -1019,12 +1062,20 @@ static NSString *_defaultService;
     [self setSharedPassword:nil forAccount:account completion:completion];
 }
 
+<<<<<<< HEAD
 + (void)requestSharedWebCredentialWithCompletion:(void (^)(NSArray *credentials, NSError *error))completion
+=======
++ (void)requestSharedWebCredentialWithCompletion:(void (^)(NSArray UIC_CREDENTIAL_TYPE *credentials, NSError *error))completion
+>>>>>>> install-cocoapods-retry
 {
     [self requestSharedWebCredentialForDomain:nil account:nil completion:completion];
 }
 
+<<<<<<< HEAD
 + (void)requestSharedWebCredentialForDomain:(NSString *)domain account:(NSString *)account completion:(void (^)(NSArray *credentials, NSError *error))completion
+=======
++ (void)requestSharedWebCredentialForDomain:(NSString *)domain account:(NSString *)account completion:(void (^)(NSArray UIC_CREDENTIAL_TYPE *credentials, NSError *error))completion
+>>>>>>> install-cocoapods-retry
 {
     SecRequestSharedWebCredential((__bridge CFStringRef)domain, (__bridge CFStringRef)account, ^(CFArrayRef credentials, CFErrorRef error) {
         if (error) {
@@ -1113,7 +1164,11 @@ static NSString *_defaultService;
     
     if (itemClass == kSecClassGenericPassword) {
         query[(__bridge __strong id)(kSecAttrService)] = _service;
+<<<<<<< HEAD
 #if !TARGET_IPHONE_SIMULATOR
+=======
+#if !TARGET_OS_SIMULATOR
+>>>>>>> install-cocoapods-retry
         if (_accessGroup) {
             query[(__bridge __strong id)kSecAttrAccessGroup] = _accessGroup;
         }
@@ -1135,7 +1190,11 @@ static NSString *_defaultService;
         }
     }
     
+<<<<<<< HEAD
 #if TARGET_OS_IPHONE
+=======
+#if TARGET_OS_IOS
+>>>>>>> install-cocoapods-retry
     if (_authenticationPrompt) {
         if (floor(NSFoundationVersionNumber) > floor(1047.25)) { // iOS 8+ (NSFoundationVersionNumber_iOS_7_1)
             query[(__bridge __strong id)kSecUseOperationPrompt] = _authenticationPrompt;
@@ -1161,7 +1220,11 @@ static NSString *_defaultService;
     
     attributes[(__bridge __strong id)kSecValueData] = value;
     
+<<<<<<< HEAD
 #if TARGET_OS_IPHONE
+=======
+#if TARGET_OS_IOS
+>>>>>>> install-cocoapods-retry
     double iOS_7_1_or_10_9_2 = 1047.25; // NSFoundationVersionNumber_iOS_7_1
 #else
     double iOS_7_1_or_10_9_2 = 1056.13; // NSFoundationVersionNumber10_9_2
@@ -1176,6 +1239,10 @@ static NSString *_defaultService;
                 NSLog(@"error: [%@] %@", @(e.code), e.localizedDescription);
                 if (error) {
                     *error = e;
+<<<<<<< HEAD
+=======
+                    CFRelease(accessControl);
+>>>>>>> install-cocoapods-retry
                     return nil;
                 }
             }
@@ -1187,9 +1254,15 @@ static NSString *_defaultService;
                 }
                 return nil;
             }
+<<<<<<< HEAD
             attributes[(__bridge __strong id)kSecAttrAccessControl] = (__bridge id)accessControl;
         } else {
 #if TARGET_OS_IPHONE
+=======
+            attributes[(__bridge __strong id)kSecAttrAccessControl] = (__bridge_transfer id)accessControl;
+        } else {
+#if TARGET_OS_IOS
+>>>>>>> install-cocoapods-retry
             NSLog(@"%@", @"Unavailable 'Touch ID integration' on iOS versions prior to 8.0.");
 #else
             NSLog(@"%@", @"Unavailable 'Touch ID integration' on OS X versions prior to 10.10.");
@@ -1197,7 +1270,11 @@ static NSString *_defaultService;
         }
     } else {
         if (floor(NSFoundationVersionNumber) <= floor(iOS_7_1_or_10_9_2) && _accessibility == UICKeyChainStoreAccessibilityWhenPasscodeSetThisDeviceOnly) {
+<<<<<<< HEAD
 #if TARGET_OS_IPHONE
+=======
+#if TARGET_OS_IOS
+>>>>>>> install-cocoapods-retry
             NSLog(@"%@", @"Unavailable 'UICKeyChainStoreAccessibilityWhenPasscodeSetThisDeviceOnly' attribute on iOS versions prior to 8.0.");
 #else
             NSLog(@"%@", @"Unavailable 'UICKeyChainStoreAccessibilityWhenPasscodeSetThisDeviceOnly' attribute on OS X versions prior to 10.10.");
@@ -1359,7 +1436,11 @@ static NSString *_defaultService;
 + (NSError *)securityError:(OSStatus)status
 {
     NSString *message = @"Security error has occurred.";
+<<<<<<< HEAD
 #if !TARGET_OS_IPHONE
+=======
+#if TARGET_OS_MAC && !TARGET_OS_IOS && !TARGET_OS_WATCH
+>>>>>>> install-cocoapods-retry
     CFStringRef description = SecCopyErrorMessageString(status, NULL);
     if (description) {
         message = (__bridge_transfer NSString *)description;

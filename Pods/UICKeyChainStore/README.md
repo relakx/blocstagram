@@ -1,7 +1,11 @@
 # UICKeyChainStore
 [![CI Status](http://img.shields.io/travis/kishikawakatsumi/UICKeyChainStore.svg?style=flat)](https://travis-ci.org/kishikawakatsumi/UICKeyChainStore)
 [![Coverage Status](https://img.shields.io/coveralls/kishikawakatsumi/UICKeyChainStore.svg?style=flat)](https://coveralls.io/r/kishikawakatsumi/UICKeyChainStore?branch=master)
+<<<<<<< HEAD
 [![Carthage Compatibility](https://img.shields.io/badge/carthage-✓-f2a77e.svg?style=flat)](https://github.com/Carthage/Carthage/)
+=======
+[![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
+>>>>>>> install-cocoapods-retry
 [![Version](https://img.shields.io/cocoapods/v/UICKeyChainStore.svg?style=flat)](http://cocoadocs.org/docsets/UICKeyChainStore)
 [![License](https://img.shields.io/cocoapods/l/UICKeyChainStore.svg?style=flat)](http://cocoadocs.org/docsets/UICKeyChainStore)
 [![Platform](https://img.shields.io/cocoapods/p/UICKeyChainStore.svg?style=flat)](http://cocoadocs.org/docsets/UICKeyChainStore)
@@ -26,6 +30,10 @@ Try [KeychainAccess](https://github.com/kishikawakatsumi/KeychainAccess).
 - **[Support TouchID and Keychain integration (iOS 8+)](#touch_id_integration)**
 - **[Support Shared Web Credentials (iOS 8+)](#shared_web_credentials)**
 - Works on both iOS & OS X
+<<<<<<< HEAD
+=======
+- Supported watchOS 2
+>>>>>>> install-cocoapods-retry
 
 ## Usage
 
@@ -474,7 +482,11 @@ item: {
 }
 ```
 
+<<<<<<< HEAD
 ### Convienient class methods
+=======
+### Convenient class methods
+>>>>>>> install-cocoapods-retry
 
 Add items using default service name (=bundle identifer).
 
@@ -517,6 +529,24 @@ it, simply add the following line to your Podfile:
 
 `pod 'UICKeyChainStore'`
 
+<<<<<<< HEAD
+=======
+##### For watchOS 2
+
+```ruby
+use_frameworks!
+
+target 'EampleApp' do
+  pod 'UICKeyChainStore'
+end
+
+target 'EampleApp WatchKit Extension' do
+  platform :watchos, '2.0'
+  pod 'UICKeyChainStore'
+end
+```
+
+>>>>>>> install-cocoapods-retry
 ### Carthage
 
 UICKeyChainStore is available through [Carthage](https://github.com/Carthage/Carthage). To install

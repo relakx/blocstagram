@@ -1,24 +1,10 @@
 PODS:
-<<<<<<< HEAD
-  - UICKeyChainStore (2.0.6)
-=======
   - UICKeyChainStore (2.0.7)
->>>>>>> install-cocoapods-retry
 
 DEPENDENCIES:
   - UICKeyChainStore
 
 SPEC CHECKSUMS:
-<<<<<<< HEAD
-  UICKeyChainStore: c5719c814e8bd69e74e4a0fc09daf8f4d6257a59
-
-<<<<<<< HEAD
-COCOAPODS: 0.39.0
-=======
-COCOAPODS: 0.37.2
->>>>>>> install-cocoapods
-=======
   UICKeyChainStore: 696cd35083f7c8fb5e201d909b7e6aea6b478575
 
 COCOAPODS: 0.39.0
->>>>>>> install-cocoapods-retry

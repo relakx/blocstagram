@@ -2,59 +2,14 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>SchemeUserState</key>
-	<dict>
-<<<<<<< HEAD
-<<<<<<< HEAD
-		<key>Pods.xcscheme</key>
-=======
-		<key>Pods-UICKeyChainStore.xcscheme</key>
->>>>>>> install-cocoapods
-=======
-		<key>Pods.xcscheme</key>
->>>>>>> install-cocoapods-retry
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
-<<<<<<< HEAD
-<<<<<<< HEAD
-		<key>UICKeyChainStore.xcscheme</key>
-=======
-		<key>Pods.xcscheme</key>
->>>>>>> install-cocoapods
-=======
-		<key>UICKeyChainStore.xcscheme</key>
->>>>>>> install-cocoapods-retry
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
-	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-<<<<<<< HEAD
-<<<<<<< HEAD
 		<key>20F413C68820C329601F74ABE130EF23</key>
-=======
-		<key>55C32205C15B6C44D03B4F29</key>
->>>>>>> install-cocoapods
-=======
-		<key>20F413C68820C329601F74ABE130EF23</key>
->>>>>>> install-cocoapods-retry
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-<<<<<<< HEAD
-<<<<<<< HEAD
 		<key>CA7E1BDFE5AA3746D7353465FB8EDA57</key>
-=======
-		<key>676943BA08A578EAC24FAD60</key>
->>>>>>> install-cocoapods
-=======
-		<key>CA7E1BDFE5AA3746D7353465FB8EDA57</key>
->>>>>>> install-cocoapods-retry
 		<dict>
 			<key>primary</key>
 			<true/>
